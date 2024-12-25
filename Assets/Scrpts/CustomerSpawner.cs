@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using Fungus;
 
 public class CustomerSpawner : MonoBehaviour
 {
