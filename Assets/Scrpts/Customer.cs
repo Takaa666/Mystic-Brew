@@ -43,7 +43,11 @@ public class Customer : MonoBehaviour
 
     void Start()
     {
-        //GenerateRandomOrder();
+        if(currentOrder == null)
+        {
+            GenerateRandomOrder();
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

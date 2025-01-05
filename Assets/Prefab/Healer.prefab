@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1409693365
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9d157550ce6cb5b42b771cc08c7515a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -158,8 +158,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1814692067
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: cdef903f8e74e44408c1485e3a3745cb, type: 3}
   m_Color: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orderList: {fileID: 11400000, guid: 1864256123d964941ba3527b74ff3f29, type: 2}
-  currentOrder: {fileID: 11400000, guid: ddec0e51f7aee9548bfa9fb5fdbdaf10, type: 2}
+  currentOrder: {fileID: 0}
 --- !u!50 &2071472512021377154
 Rigidbody2D:
   serializedVersion: 4
