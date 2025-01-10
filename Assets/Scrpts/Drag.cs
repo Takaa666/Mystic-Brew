@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -14,6 +15,13 @@ public class Drag : MonoBehaviour
     private bool isOverContainer;
     private bool isMouseOver;
     private AllPotionContainer currentContainer;
+    private GameObject objectWithTagM;
+    public int clickCount = 0;
+    public GameObject bubuk;
+    public float spawnX = 0f;
+    public float spawnY = 0f;
+    public float spawnZ = 0f;
+
 
 
     private void Start()
@@ -78,7 +86,7 @@ public class Drag : MonoBehaviour
         else
         {
             // Jika posisi drop tidak valid, kembalikan ke posisi awal.
-            transform.position = originalPosition;
+            //transform.position = originalPosition;
         }
     }
 
@@ -100,6 +108,38 @@ public class Drag : MonoBehaviour
             isOverContainer = true;
             currentContainer = collision.GetComponent<AllPotionContainer>();
         }
+        if (collision.CompareTag("M"))
+        {
+            objectWithTagM = collision.gameObject;
+        }
+        if (collision.CompareTag("Cobek"))
+        {
+            clickCount++;
+
+            // Jika bunga biru dihaluskan (setelah klik tertentu), spawn prefab bunga biru halus di posisi xyz yang ditentukan
+            if (clickCount == 6)
+            {
+                // Tentukan posisi spawn menggunakan koordinat xyz
+                Vector3 spawnPosition = new Vector3(spawnX, spawnY, spawnZ);
+
+                // Spawn prefab bunga biru halus pada posisi spawnPosition
+                GameObject bungaBiruHalus = Instantiate(bubuk, spawnPosition, Quaternion.identity);
+
+
+                // Hapus game object bunga biru kasar saat ini
+                Destroy(gameObject);
+
+                clickCount = 0;
+            }
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("M") && !isDragging)
+        {
+            // Update posisi objek menjadi sama dengan objek dengan tag "M"
+            transform.position = collision.transform.position;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -109,6 +149,10 @@ public class Drag : MonoBehaviour
         {
             isOverContainer = false;
             currentContainer = null;
+        }
+        if (collision.CompareTag("M"))
+        {
+            objectWithTagM = null;
         }
     }
 }

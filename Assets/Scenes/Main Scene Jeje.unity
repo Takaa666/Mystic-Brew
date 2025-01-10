@@ -262,7 +262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7875692
 Transform:
   m_ObjectHideFlags: 0
@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 17742182}
   - component: {fileID: 17742181}
   m_Layer: 5
-  m_Name: Health
+  m_Name: Bunga Biru
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 67ca8c6ec86f2aa468bbd02e216a2518, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b950839288624614aac1581c5fbc761a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1135,7 +1135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 384533056947415976, guid: 79ae72a8cfb466d4c84381b1d4e6893c, type: 3}
-  spawnLocation: {fileID: 1938465173}
+  spawnLocation: {fileID: 554296213}
 --- !u!1 &97465056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,7 +1150,7 @@ GameObject:
   - component: {fileID: 97465058}
   m_Layer: 0
   m_Name: Deplokan Alterned Version (1)
-  m_TagString: Cobek
+  m_TagString: M
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1164,7 +1164,7 @@ Transform:
   m_GameObject: {fileID: 97465056}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -352.05, y: -1145.0769, z: 9.133776}
+  m_LocalPosition: {x: -354.26, y: -1145.0769, z: 9.133776}
   m_LocalScale: {x: 0.5658214, y: 0.5658214, z: 0.5658214}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1205,7 +1205,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015157938, y: -1.2861347}
+  m_Offset: {x: 0.015157938, y: -1.7399306}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1216,7 +1216,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1372833, y: 1.3533028}
+  m_Size: {x: 3.1372833, y: 0.44571126}
   m_EdgeRadius: 0
 --- !u!58 &97465059
 CircleCollider2D:
@@ -2294,7 +2294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 8245832828543546108, guid: 4525323a7f811be42a2c00120d549691, type: 3}
-  spawnLocation: {fileID: 1938465173}
+  spawnLocation: {fileID: 1166568039}
 --- !u!1 &366270162
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,6 +3110,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552806654}
   m_CullTransparentMesh: 1
+--- !u!1 &554296212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 554296213}
+  - component: {fileID: 554296214}
+  m_Layer: 0
+  m_Name: Spawn Bahan Kasar (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &554296213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554296212}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -341.05, y: -1147.0859, z: 9.154268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1408935238}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &554296214
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554296212}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.7062721, y: -0.18549752}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.3321, y: 0.9014964}
+  m_EdgeRadius: 0
 --- !u!1 &558177168
 GameObject:
   m_ObjectHideFlags: 0
@@ -3448,7 +3525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 8245832828543546108, guid: 7ab1a963501c29e479b471a7d42df57c, type: 3}
-  spawnLocation: {fileID: 1938465173}
+  spawnLocation: {fileID: 1166568039}
 --- !u!1 &608729448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5446,7 +5523,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4493456, y: -0.5498502}
+  m_Offset: {x: -1.6417627, y: -1.029155}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5457,7 +5534,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7692852, y: 0.172791}
+  m_Size: {x: 5.1541195, y: 1.1314006}
   m_EdgeRadius: 0
 --- !u!4 &989224454
 Transform:
@@ -6344,6 +6421,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152798623}
   m_CullTransparentMesh: 1
+--- !u!1 &1166568038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1166568039}
+  - component: {fileID: 1166568040}
+  m_Layer: 0
+  m_Name: Spawn Bahan Kasar (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1166568039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166568038}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -340.51, y: -1147.0859, z: 9.154268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1408935238}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1166568040
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166568038}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.7062721, y: -0.18549752}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.3321, y: 0.9014964}
+  m_EdgeRadius: 0
 --- !u!1 &1178552429
 GameObject:
   m_ObjectHideFlags: 0
@@ -6478,7 +6632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4704826358259812763, guid: 42846bdf980865945b78d865e8491306, type: 3}
-  spawnLocation: {fileID: 1938465173}
+  spawnLocation: {fileID: 554296213}
 --- !u!1 &1193467855
 GameObject:
   m_ObjectHideFlags: 0
@@ -6989,6 +7143,8 @@ Transform:
   - {fileID: 1660841660}
   - {fileID: 1447039346}
   - {fileID: 1938465173}
+  - {fileID: 554296213}
+  - {fileID: 1166568039}
   - {fileID: 989224454}
   - {fileID: 97465057}
   - {fileID: 1915455694}
@@ -7182,7 +7338,7 @@ GameObject:
   - component: {fileID: 1469361150}
   - component: {fileID: 1469361149}
   m_Layer: 5
-  m_Name: Mana
+  m_Name: Bunga Merah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7227,7 +7383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 55ce1864a88cab8418de0997963df88e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0680e717b0600b648a8b8ba8174d36e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8097,7 +8253,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -8726,7 +8882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 8245832828543546108, guid: fb33e947f2567b44bbd22f62b9fbecb0, type: 3}
-  spawnLocation: {fileID: 1938465173}
+  spawnLocation: {fileID: 1166568039}
 --- !u!1 &1733573224
 GameObject:
   m_ObjectHideFlags: 0
@@ -9132,7 +9288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 8245832828543546108, guid: 24e996d40f3b53c41b6a94f56d2b83d0, type: 3}
-  spawnLocation: {fileID: 1938465173}
+  spawnLocation: {fileID: 554296213}
 --- !u!1 &1815169462
 GameObject:
   m_ObjectHideFlags: 0
@@ -9634,7 +9790,7 @@ Transform:
   m_GameObject: {fileID: 1915455693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.12778327, w: 0.99180216}
-  m_LocalPosition: {x: -353.47, y: -1145.83, z: 9.133776}
+  m_LocalPosition: {x: -355.68002, y: -1145.83, z: 9.133776}
   m_LocalScale: {x: 0.5069124, y: 0.54114085, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9833,7 +9989,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.4483242, y: -0.18549752}
+  m_Offset: {x: 0.7062721, y: -0.18549752}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9844,7 +10000,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.816204, y: 0.9014964}
+  m_Size: {x: 5.3321, y: 0.9014964}
   m_EdgeRadius: 0
 --- !u!4 &1938465173
 Transform:
@@ -9855,7 +10011,7 @@ Transform:
   m_GameObject: {fileID: 1938465171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -341.3651, y: -1147.0859, z: 9.154268}
+  m_LocalPosition: {x: -341.89, y: -1147.0859, z: 9.154268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

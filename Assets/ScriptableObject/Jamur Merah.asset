@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f635ea3da80abba42a6154a409ef30f6, type: 3}
-  m_Name: Bunga Merah
+  m_Name: Jamur Merah
   m_EditorClassIdentifier: 
-  itemName: Bunga Merah
-  icon: {fileID: 21300000, guid: 0680e717b0600b648a8b8ba8174d36e8, type: 3}
+  itemName: Jamur Merah
+  icon: {fileID: 21300000, guid: edf2fc4a8e500e148b93c3d244dcdbac, type: 3}
   isCooked: 0
-  prefab: {fileID: 8245832828543546108, guid: 75cc017219219674cb1ba131fd6b7691, type: 3}
+  prefab: {fileID: 8245832828543546108, guid: 469e43dc9a4cf5a4da066982e989da29, type: 3}

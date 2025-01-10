@@ -21,6 +21,11 @@ public class DragPenggerus : MonoBehaviour
             transform.position = new Vector3(mousePosition.x, mousePosition.y, originalPosition.z);
         }
     }
+
+    private void OnMouseUp()
+    {
+        transform.position = originalPosition;
+    }
     // Start is called before the first frame update
     void Start()
     {

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1454296141888615049}
   - component: {fileID: 284725654964890168}
   - component: {fileID: 8639480337493032250}
-  - component: {fileID: 3336056498117685919}
+  - component: {fileID: 7357617341720895298}
   m_Layer: 0
   m_Name: Jamur Hijau
   m_TagString: Untagged
@@ -159,7 +159,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.492779, y: 6.400727}
   m_EdgeRadius: 0
---- !u!114 &3336056498117685919
+--- !u!114 &7357617341720895298
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,12 +168,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8245832828543546108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae338097321609446a04b41644def6a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 612cc9dd0ddef6c4e962dee8ead2c1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JamurMerahHalusPrefab: {fileID: 4704826358259812763, guid: d50948a79860cc74f81f13fd6796092b, type: 3}
-  JamurMerahHalusTag: JamurHijauHalus
+  foodItem: {fileID: 11400000, guid: ac6383635585e3b49b67d365aa9cdcc7, type: 2}
+  hoverInfoPopup: {fileID: 0}
   clickCount: 0
+  bubuk: {fileID: 4704826358259812763, guid: d50948a79860cc74f81f13fd6796092b, type: 3}
   spawnX: 23.27
   spawnY: -3.17
   spawnZ: 0
