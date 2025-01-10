@@ -13,19 +13,10 @@ public class AllPotionContainer : MonoBehaviour
     private bool combinationFailed = false; // Tracks if the combination has failed
     private Potion createdPotion; // Tracks the created potion to spawn its prefab
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Drag draggableFood = other.GetComponent<Drag>();
-
-        if (draggableFood != null && draggableFood.foodItem != null)
-        {
-            AddIngredient(draggableFood.foodItem);
-            Destroy(other.gameObject);
-        }
-    }
+    
 
     // Add ingredient to the container and check the combination
-    private void AddIngredient(Bahan ingredient)
+    public void AddIngredient(Bahan ingredient)
     {
         currentIngredients.Add(ingredient);
         CheckCombination();

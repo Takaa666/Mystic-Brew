@@ -13,6 +13,7 @@ public class Drag : MonoBehaviour
     private bool isDragging;
     private bool isOverContainer;
     private bool isMouseOver;
+    private AllPotionContainer currentContainer;
 
 
     private void Start()
@@ -68,9 +69,15 @@ public class Drag : MonoBehaviour
             Vector3 worldPosition = transform.position;
             hoverInfoPopup.ShowPopupBahan(foodItem, worldPosition);
         }
-        // Jika posisi drop tidak valid, kembalikan ke posisi awal.
-        if (!isOverContainer)
+        // Jika objek berada di dalam container, hancurkan objek
+        if (isOverContainer)
         {
+            currentContainer.AddIngredient(foodItem);
+            Destroy(gameObject);
+        }
+        else
+        {
+            // Jika posisi drop tidak valid, kembalikan ke posisi awal.
             transform.position = originalPosition;
         }
     }
@@ -91,6 +98,7 @@ public class Drag : MonoBehaviour
         if (collision.CompareTag("Container"))
         {
             isOverContainer = true;
+            currentContainer = collision.GetComponent<AllPotionContainer>();
         }
     }
 
@@ -100,6 +108,7 @@ public class Drag : MonoBehaviour
         if (collision.CompareTag("Container"))
         {
             isOverContainer = false;
+            currentContainer = null;
         }
     }
 }
