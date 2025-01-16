@@ -21,8 +21,8 @@ public class Drag : MonoBehaviour
     public float spawnX = 0f;
     public float spawnY = 0f;
     public float spawnZ = 0f;
-
-
+    public AudioSource sfx;
+    public AudioClip sfxPlay;
 
     private void Start()
     {
@@ -115,7 +115,11 @@ public class Drag : MonoBehaviour
         if (collision.CompareTag("Cobek"))
         {
             clickCount++;
+            if(sfx && sfxPlay != null)
+            {
+                sfx.PlayOneShot(sfxPlay);
 
+            }
             // Jika bunga biru dihaluskan (setelah klik tertentu), spawn prefab bunga biru halus di posisi xyz yang ditentukan
             if (clickCount == 6)
             {

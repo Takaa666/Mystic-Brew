@@ -7,7 +7,7 @@ public class CustomerSpawner : MonoBehaviour
     public Transform[] spawnPoints;      // Specific spawn locations for customers
     public int maxCustomerSlots = 3;     // Maximum number of customer slots
 
-    public string spawnDialogBlockName = "CustomerSpawnDialog"; // Block name in Flowchart to display dialog
+    private GameObject lastSpawnedCustomerPrefab; // Track the last spawned customer prefab
 
     private void Start()
     {
@@ -47,15 +47,22 @@ public class CustomerSpawner : MonoBehaviour
         // If the selected spawn point has no children, spawn a customer here
         if (selectedSpawnPoint.childCount == 0)
         {
-            // Select a random customer prefab from the array
-            GameObject selectedCustomerPrefab = customerPrefabs[Random.Range(0, customerPrefabs.Length)];
+            // Select a random customer prefab from the array, ensuring it's not the same as the last one
+            GameObject selectedCustomerPrefab;
+            do
+            {
+                selectedCustomerPrefab = customerPrefabs[Random.Range(0, customerPrefabs.Length)];
+            } while (selectedCustomerPrefab == lastSpawnedCustomerPrefab);
 
             // Instantiate the selected customer prefab and set its parent to the spawn point
             GameObject newCustomer = Instantiate(selectedCustomerPrefab, selectedSpawnPoint.position, Quaternion.identity);
             newCustomer.transform.SetParent(selectedSpawnPoint);
 
+            // Update the last spawned customer prefab
+            lastSpawnedCustomerPrefab = selectedCustomerPrefab;
+
             // Trigger Fungus dialog box when the customer is spawned
-            
+
         }
     }
 }

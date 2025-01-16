@@ -18,3 +18,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a6624d4d9a4e78b4bbbbc422afe30315, type: 2}
   - {fileID: 11400000, guid: c5387bf188435d9428dd61c368a5cbf2, type: 2}
   potionPrefab: {fileID: 431383210911500408, guid: 1e493783d3d32af40ada7962509f96b2, type: 3}
+  potionOrderNotif: {fileID: 6708658012288610485, guid: 92c09d0e77e1dcc459238dd57066671e, type: 3}
+  wrongOrder: {fileID: 2923057214355436189, guid: 095f6ed89a5f8db409277e029cb3bc20, type: 3}
+  thankYou: {fileID: 742024109571835052, guid: 3b76d1eaf47820446bb05b481cbfc143, type: 3}
+  price: 6.5
