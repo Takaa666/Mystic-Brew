@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3269267129293965449}
   - component: {fileID: 2343918822831929497}
   - component: {fileID: 5800643853225364792}
-  - component: {fileID: -1638411971817295878}
+  - component: {fileID: -8061932436315765193}
+  - component: {fileID: 1199739617805709678}
   m_Layer: 0
   m_Name: Jamur Biru
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.234, y: 4.38, z: 0}
-  m_LocalScale: {x: 0.44411224, y: 0.44411224, z: 0.44411224}
+  m_LocalScale: {x: 0.35187012, y: 0.32397988, z: 0.44411224}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -113,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5800643853225364792
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,7 +147,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.34402478, y: 0.16295946}
+  m_Offset: {x: -0.18225724, y: -0.039250374}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -157,9 +158,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.47004, y: 5.135849}
+  m_Size: {x: 3.1465049, y: 4.731429}
   m_EdgeRadius: 0
---- !u!114 &-1638411971817295878
+--- !u!114 &-8061932436315765193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,12 +169,111 @@ MonoBehaviour:
   m_GameObject: {fileID: 384533056947415976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 967fb7ef7251dbf4e8ba1c84c9e9dbd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 612cc9dd0ddef6c4e962dee8ead2c1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BungaBiruHalusPrefab: {fileID: 4704826358259812763, guid: 378446872c5945240b45484d06a0085d, type: 3}
-  BungaBiruHalusTag: M
+  foodItem: {fileID: 11400000, guid: 6d2f3a42f3951a34288f2e8a7a3881e9, type: 2}
+  hoverInfoPopup: {fileID: 0}
   clickCount: 0
+  bubuk: {fileID: 4704826358259812763, guid: 378446872c5945240b45484d06a0085d, type: 3}
   spawnX: 23.27
   spawnY: -3.17
   spawnZ: 0
+  sfx: {fileID: 1199739617805709678}
+  sfxPlay: {fileID: 8300000, guid: 62c601423451bb64797e1da5fa7afa56, type: 3}
+--- !u!82 &1199739617805709678
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384533056947415976}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Bubuk Bunga Merah
   icon: {fileID: 21300000, guid: 39aa8fa8090d049439612b6c2dc5ed5b, type: 3}
   isCooked: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 4704826358259812763, guid: 730ff73637602f94fbc1bba262b78be0, type: 3}

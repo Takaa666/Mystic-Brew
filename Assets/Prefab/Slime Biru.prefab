@@ -119,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000071525574, y: -0.045351863}
+  m_Offset: {x: 0.095060825, y: -0.46379685}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.624004, y: 5.6242256}
+  m_Size: {x: 4.926882, y: 4.1178184}
   m_EdgeRadius: 0
 --- !u!114 &4754514382722091422
 MonoBehaviour:
@@ -145,6 +145,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodItem: {fileID: 11400000, guid: 2e323a8ab16705b4f89c4945177645b1, type: 2}
+  hoverInfoPopup: {fileID: 0}
+  clickCount: 0
+  bubuk: {fileID: 0}
+  spawnX: 23.27
+  spawnY: -3.17
+  spawnZ: 0
 --- !u!50 &3535163816646720836
 Rigidbody2D:
   serializedVersion: 4
@@ -171,4 +177,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

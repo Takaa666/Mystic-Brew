@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potionName: Potion Speed
   ingredients:
-  - {fileID: 11400000, guid: cc3e49eaca76e7340894a7e9fe8ffaac, type: 2}
-  - {fileID: 11400000, guid: 4d55b70968285e34896d41659de71ddf, type: 2}
-  - {fileID: 11400000, guid: 355d05769f3bb834988eaf925c0e790e, type: 2}
+  - {fileID: 11400000, guid: 6c6afb7194687164283dbba99de158f0, type: 2}
   - {fileID: 11400000, guid: 79e786910067c4c419174a79b15d565c, type: 2}
-  - {fileID: 11400000, guid: 2e323a8ab16705b4f89c4945177645b1, type: 2}
+  - {fileID: 11400000, guid: 884f64fa61cb0534dbb8c6b65c069e1e, type: 2}
   potionPrefab: {fileID: 1328347353276517088, guid: fa5d7b10e4c02724da9da3f9dc7860ed, type: 3}
+  potionOrderNotif: {fileID: 3317270772270670021, guid: 0885d2410fb2b7d49a15e2adb4855d79, type: 3}
+  wrongOrder: {fileID: 2923057214355436189, guid: 095f6ed89a5f8db409277e029cb3bc20, type: 3}
+  thankYou: {fileID: 1904659426170102742, guid: 982953158a2c6c44abcb7783b38825c2, type: 3}
+  price: 7.5

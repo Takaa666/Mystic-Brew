@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodItem: {fileID: 11400000, guid: 884f64fa61cb0534dbb8c6b65c069e1e, type: 2}
+  hoverInfoPopup: {fileID: 0}
 --- !u!50 &3535163816646720836
 Rigidbody2D:
   serializedVersion: 4
@@ -171,4 +172,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

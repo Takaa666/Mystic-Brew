@@ -7,6 +7,7 @@ public class DragPotion : MonoBehaviour
 {
     public Potion potion;  // Reference to the potion object
     public HoverInfoPopup hoverInfoPopup;  // Reference to the HoverInfoPopup script
+    private bool isTouchingCobek = false;
 
     private Vector3 originalPosition;
     private bool isDragging;
@@ -18,6 +19,23 @@ public class DragPotion : MonoBehaviour
         {
             // Set sprite of GameObject based on the Potion's icon
             //GetComponent<SpriteRenderer>().sprite = potion.icon;  // Assuming ManaPotion has an icon field
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Cobek"))
+        {
+            Debug.Log("tes");
+            isTouchingCobek = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Cobek"))
+        {
+            isTouchingCobek = false;
         }
     }
 
